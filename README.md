@@ -1,50 +1,72 @@
-# React + TypeScript + Vite
+# Compute RVila
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Compute RVila, a modern and responsive computer selling website built with React, Shadcn, Tailwind CSS, and Vite. This project aims to provide a seamless and efficient user experience for browsing and purchasing computers online.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: A JavaScript library for building user interfaces.
+- **Shadcn**: A component library for building accessible and customizable UI components.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Vite**: A fast and modern build tool for web projects.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Responsive Design**: Ensures the website looks great on all devices.
+- **Fast Performance**: Leveraging Vite for quick build times and fast refresh.
+- **Customizable Components**: Using Shadcn for accessible and customizable UI components.
+- **Modern Styling**: Tailwind CSS for efficient and maintainable styling.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+To get started with the project, follow these steps:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Clone the repository**:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```sh
+   git clone https://github.com/yourusername/compute-rvila.git
+   cd compute-rvila
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. **Install dependencies**:
+
+   ```sh
+   npm install
+   ```
+
+3. **Start the development server**:
+
+   ```sh
+   npm run dev
+   ```
+
+4. **Build for production**:
+   ```sh
+   npm run build
+   ```
+
+## Project Structure
+
+- `src/`: Contains the source code of the project.
+- `public/`: Contains public assets like images and fonts.
+- `vite.config.js`: Configuration file for Vite.
+- `tailwind.config.js`: Configuration file for Tailwind CSS.
+
+## Contributing
+
+We welcome contributions to improve Compute RVila. To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any inquiries or feedback, please contact us at [support@computeravila.com](mailto:support@computeravila.com).
+
+Thank you for visiting Compute RVila!
